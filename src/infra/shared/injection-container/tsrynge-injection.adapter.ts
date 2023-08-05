@@ -13,7 +13,7 @@ class TsyringeDependencyInjectionAdapter implements DependecyInjection {
     this.registerAll();
   }
 
-  resolve<T>(token: new (...args: any[]) => T): T {
+  getInstance<T>(token: new (...args: any[]) => T): T {
     return this.tsyringe.resolve(token);
   }
 

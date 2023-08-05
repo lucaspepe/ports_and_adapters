@@ -3,7 +3,7 @@ type constructor<T> = {
 };
 
 interface DependecyInjection {
-  resolve<T>(token: constructor<T>): T;
+  getInstance<T>(token: constructor<T>): T;
 }
 
 export { DependecyInjection };

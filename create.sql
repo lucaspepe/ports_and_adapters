@@ -13,3 +13,6 @@ create table lucas.installment (
 	amount numeric,
 	primary key (code, number)
 );
+
+
+

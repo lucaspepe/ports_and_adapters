@@ -18,7 +18,7 @@ export default class Router {
       "/transactions",
       async (params: any, body: any) => {
         const createTransaction =
-          this.dependencyInjection.resolve(CreateTransaction);
+          this.dependencyInjection.getInstance(CreateTransaction);
         await createTransaction.execute(body);
       }
     );

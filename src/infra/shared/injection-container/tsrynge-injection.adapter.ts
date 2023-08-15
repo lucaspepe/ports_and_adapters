@@ -20,8 +20,8 @@ class TsyringeDependencyInjectionAdapter implements DependecyInjection {
   private registerAll() {
     this.tsyringe.registerSingleton<TransactionRepository>(
       "TransactionRepository",
-      TransactionDatabaseRepository
-      // TransactionMemoryRepository
+      // TransactionDatabaseRepository
+      TransactionMemoryRepository
     );
 
     this.tsyringe.registerSingleton<Connection>("Database", PostgreSQLAdapter);

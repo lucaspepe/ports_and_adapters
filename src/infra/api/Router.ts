@@ -30,6 +30,7 @@ export default class Router {
         // const getTransaction = new GetTransaction(this.transactionRepository);
         // const transaction = await getTransaction.execute(params.code);
         // return transaction;
+        return {status: "OK"}
       }
     );
   }

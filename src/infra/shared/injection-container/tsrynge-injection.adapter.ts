@@ -1,8 +1,8 @@
 import { DependencyContainer, container } from "tsyringe";
 import { DependecyInjection } from "./dependency-injection.interface";
 import TransactionRepository from "../../domain/repository/TransactionRepository";
-import TransactionMemoryRepository from "../../infra/repository/TransactionMemoryRepository";
-import TransactionDatabaseRepository from "../../infra/repository/TransactionDatabaseRepository";
+import TransactionMemoryRepository from "../repository/TransactionMemoryRepository";
+import TransactionDatabaseRepository from "../repository/TransactionDatabaseRepository";
 import Connection from "../../infra/database/Connection";
 import PostgreSQLAdapter from "../../infra/database/PostgreSQLAdapter";
 
